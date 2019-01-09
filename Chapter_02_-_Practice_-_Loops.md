@@ -75,6 +75,7 @@ speed
 ```
 ## [1] 29
 ```
+
 **Great job! Proceed to the next exercise.**
 
 ### Throw in more conditionals
@@ -116,6 +117,7 @@ while (speed > 30) {
 ## [1] "Your speed is 36"
 ## [1] "Slow down!"
 ```
+
 **Wonderful! To further improve our driver assistant model, head over to the next exercise!**
 
 ### Stop the while loop: break
@@ -152,6 +154,7 @@ while (speed > 30) {
 ```
 ## [1] "Your speed is 88"
 ```
+
 **Wonderful! Now that you've correctly solved this exercise, feel free to play around with different values of** `speed` **to see how the** `while` **loop handles the different cases.**
 
 ### Build a while loop from scratch
@@ -190,6 +193,7 @@ while (i <= 10) {
 ## [1] 27
 ## [1] 30
 ```
+
 **Great work! Head over to the next video!**
 
 <div align="middle">
@@ -255,6 +259,7 @@ for (i in 1:length(linkedin)) {
 ## [1] 17
 ## [1] 14
 ```
+
 **Piece of cake! Go to the next exercise.**
 
 ### Loop over a list
@@ -315,6 +320,7 @@ for (i in 1:length(nyc)) {
 ## [5] "Staten Island"
 ## [1] FALSE
 ```
+
 **Good job! Filip mentioned that** `for` **loops can also be used for matrices. Let's put that to a test in the next exercise.**
 
 ### Loop over a matrix
@@ -361,6 +367,7 @@ for (i in 1:nrow(ttt)) {
 ## [1] "On row 3 and column 2 the board contains NA"
 ## [1] "On row 3 and column 3 the board contains X"
 ```
+
 **Awesome! You're sufficiently comfortable with basic** `for` **looping, so it's time to step it up a notch!**
 
 ### Mix it up with control flow
@@ -404,6 +411,7 @@ for (li in linkedin) {
 ## [1] "You're popular!"
 ## [1] 14
 ```
+
 **Outstanding! In the next exercise, you'll customize this** `for` **loop even further with** `break` **and** `next` **statements.**
 
 ### Next, you break it
@@ -460,6 +468,7 @@ for (li in linkedin) {
 ## [1] "You're popular!"
 ## [1] "This is ridiculous, I'm outta here!"
 ```
+
 **Great.** `for`**,** `break`**,** `next`**? We name it, you can do it!**
 
 ### Build a for loop from scratch
@@ -502,5 +511,6 @@ rcount
 ```
 ## [1] 5
 ```
+
 **For-midable! This exercise concludes the chapter on** `while` **and** `for` **loops.**  
 **You have finished the chapter "Loops"!**

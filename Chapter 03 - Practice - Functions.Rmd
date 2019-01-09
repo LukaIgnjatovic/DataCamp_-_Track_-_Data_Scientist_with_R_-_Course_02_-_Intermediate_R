@@ -54,6 +54,7 @@ In the next exercises, you'll be learning how to use the `mean()` function with 
 # Inspect the arguments of the mean() function
 args(mean)
 ```
+
 **Great! That wasn't too hard, was it? Take a look at the documentation and head over to the next exercise.**
 
 ### Use a function
@@ -84,6 +85,7 @@ avg_fb <- mean(facebook)
 avg_li
 avg_fb
 ```
+
 **Nice! I'm sure you've already called more advanced R functions in your history as a programmer. Now you also know what actually happens under the hood.**
 
 ### Use a function (2)
@@ -123,6 +125,7 @@ avg_sum_trimmed <- mean(linkedin + facebook, trim = 0.2)
 avg_sum
 avg_sum_trimmed
 ```
+
 **Nice! When the** `trim` **argument is not zero, it chops off a fraction (equal to** `trim`**) of the vector you pass as argument** `x`**.**
 
 ### Use a function (3)
@@ -149,6 +152,7 @@ mean(linkedin)
 # Advanced average of linkedin
 mean(linkedin, na.rm = TRUE)
 ```
+
 **Awesome! Up to the next exercise!**
 
 ### Functions inside functions
@@ -170,6 +174,7 @@ facebook <- c(17, NA, 5, 16, 8, 13, 14)
 # Calculate the mean absolute deviation
 mean(abs(linkedin - facebook), na.rm = TRUE)
 ```
+
 **Excellent! Proceed to the next exercise.**
 
 ### Required, or optional?
@@ -234,6 +239,7 @@ sum_abs <- function(a, b) {
 # Use the function
 sum_abs(-2, 3)
 ```
+
 **Great! Step it up a notch in the next exercise!**
 
 ### Write your own function (2)
@@ -262,6 +268,7 @@ hello <- function() {
 # Call the function hello()
 hello()
 ```
+
 **Truly impressive! Head over to the next exercise.**
 
 ### Write your own function (3)
@@ -293,6 +300,7 @@ pow_two <- function(x, print_info = TRUE) {
   return(y)
 }
 ```
+
 **Wonderful! Have you tried calling this** `pow_two()` **function? Try** `pow_two(5)`**,** `pow_two(5, TRUE)` **and** `pow_two(5, FALSE)`**. Which ones give different results?**
 
 ### Function scoping
@@ -395,6 +403,7 @@ interpret <- function(num_views) {
 interpret(linkedin[1])
 interpret(facebook[2])
 ```
+
 **Funkadelic! The annoying thing here is that** `interpret()` **only takes one argument. Proceed to the next exercise to implement something more useful.**
 
 ### R you functional? (2)
@@ -446,6 +455,7 @@ interpret_all <- function(views, return_sum = TRUE) {
 interpret_all(linkedin)
 interpret_all(facebook)
 ```
+
 **Perfect! Have a look at the results; it appears that the sum of views on popular days are the same for Facebook and LinkedIn, what a coincidence! Your different social profiles must be fairly balanced. Head over to the next video!**
 
 <div align="middle">
@@ -486,6 +496,7 @@ qplot(mtcars$wt, mtcars$hp)
 # Check out the currently attached packages again
 search()
 ```
+
 **Awesome! Notice how** `search()` *and* `library()` *are closely interconnected functions. Head over to the next exercise.*
 
 ### Different ways to load a package

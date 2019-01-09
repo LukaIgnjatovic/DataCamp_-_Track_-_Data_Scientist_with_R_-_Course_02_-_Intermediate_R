@@ -54,6 +54,7 @@ sum(round(abs(errors)))
 ```
 ## [1] 29
 ```
+
 **Great! Head over to the next exercise.**
 
 ### Find the error
@@ -77,6 +78,7 @@ mean(abs(c(vec1, vec2)))
 ```
 ## [1] 4.48
 ```
+
 **Nice work! If you check out the documentation of** `mean()`**, you'll see that only the first argument,** `x`**, should be a vector. If you also specify a second argument, R will match the arguments by position and expect a specification of the** `trim` **argument. Therefore, merging the two vectors is a must!**
 
 ### Data Utilities
@@ -119,6 +121,7 @@ sort(social_vec, decreasing = TRUE)
 ```
 ##  [1] 17 17 16 16 14 14 13 13  9  8  7  5  5  2
 ```
+
 **Wonderful! These instructions required you to solve this challenge in a step-by-step approach. If you're comfortable with the functions, you can combine some of these steps into powerful one-liners.**
 
 ### Find the error (2)
@@ -161,6 +164,7 @@ sum(c(seq1, seq2))
 ```
 ## [1] 87029
 ```
+
 **Nice! Head over to the next video and learn more about regular expressions!**
 
 <div align="middle">
@@ -214,6 +218,7 @@ emails[hits]
 ## [1] "john.doe@ivyleague.edu"   "education@world.gov"     
 ## [3] "invalid.edu"              "quant@bigdatacollege.edu"
 ```
+
 **Bellissimo! You can probably guess what we're trying to achieve here: select all the emails that end with ".edu". However, the strings** `education@world.gov` **and** `invalid.edu` **were also matched. Let's see in the next exercise what you can do to improve our pattern and remove these false positives.**
 
 ### grepl & grep (2)
@@ -257,6 +262,7 @@ emails[hits]
 ```
 ## [1] "john.doe@ivyleague.edu"   "quant@bigdatacollege.edu"
 ```
+
 **Great! A careful construction of our regular expression leads to more meaningful matches. However, even our robust email selector will often match some incorrect email addresses (for instance kiara@@fakemail.edu). Let's not worry about this too much and continue with** `sub()` **and** `gsub()` **to actually edit the email addresses!**
 
 ### sub & gsub
@@ -286,6 +292,7 @@ sub("@.*\\.edu$", "@datacamp.edu", emails)
 ## [3] "global@peace.org"         "invalid.edu"             
 ## [5] "quant@datacamp.edu"       "cookie.monster@sesame.tv"
 ```
+
 **Awesome! Notice how only the valid .edu addresses are changed while the other emails remain unchanged. To get a taste of other things you can accomplish with regex, head over to the next exercise.**
 
 ### sub & gsub (2)
@@ -346,7 +353,7 @@ unclass(today)
 ```
 
 ```
-## [1] 17806
+## [1] 17905
 ```
 
 ```r
@@ -358,8 +365,9 @@ unclass(now)
 ```
 
 ```
-## [1] 1538479089
+## [1] 1547052872
 ```
+
 **Great! Using R to get the current date and time is nice, but you should also know how to create dates and times from character strings. Find out how in the next exercises!**
 
 ### Create and format dates
@@ -427,6 +435,7 @@ format(date3, "%b %Y")
 ```
 ## [1] "Jan 2006"
 ```
+
 **You're a date magician! You can use** `POSIXct` **objects, i.e. Time objects in R, in a similar fashion. Give it a try in the next exercise.**
 
 ### Create and format times
@@ -475,6 +484,7 @@ format(time2, "%I:%M %p")
 ```
 ## [1] "02:23 PM"
 ```
+
 **Great!**
 
 ### Calculations with Dates
@@ -534,6 +544,7 @@ print(mean(day_diff))
 ```
 ## Time difference of 2.75 days
 ```
+
 **Great! Head over to the next exercise.**
 
 ### Calculations with Times
@@ -602,6 +613,7 @@ mean(time_online)
 ```
 ## Time difference of 1485.2 secs
 ```
+
 **Great! Time to tackle the final exercise of this course!**
 
 ### Time is of the essence
@@ -636,5 +648,6 @@ max(abs(astro_dates - meteo_dates))
 ```
 ## Time difference of 24 days
 ```
+
 **Impressive! Great job on finishing this course!**  
 **You have finished the chapter "Utilities"!**

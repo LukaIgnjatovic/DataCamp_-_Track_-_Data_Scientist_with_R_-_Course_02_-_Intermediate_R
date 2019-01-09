@@ -1,13 +1,33 @@
-# DataCamp - Intermediate R
-[Luka Ignjatović](https://github.com/LukaIgnjatovic)  
+---
+title: "DataCamp - Intermediate R"
+author: "[Luka Ignjatovi&#263;](https://github.com/LukaIgnjatovic)"
+output:
+  html_document:
+    highlight: tango
+    theme: united
+    toc: yes
+    toc_depth: 4
+    keep_md: true
+  md_document:
+    toc: true
+    toc_depth: 4
+---
 
 ## The apply family
 
 Whenever you're using a for loop, you might want to revise your code and see whether you can use the lapply function instead. Learn all about this intuitive way of applying a function over a list or a vector, and its variants sapply and vapply.
 
-> --- Document: "Slides - The apply family" ---  
+<div align="middle">
 
-> --- Video: "Section 04 - Lecture 01 - lapply" ---
+> **Document:** ["Slides - The apply family"](./Slides/Chapter 04 - The apply family.pdf)
+
+</div>
+
+<div align="middle">
+
+<video width="80%" controls src="./Videos/Chapter 04 - Lecture 01 - lapply.mp4" type="video/mp4"/>
+
+</div>
 
 ### Use lapply with a built-in R function
 
@@ -45,6 +65,7 @@ str(split_low)
 ##  $ : chr [1:2] "pascal" "1623"
 ##  $ : chr [1:2] "pearson" "1857"
 ```
+
 **Great! Head over to the next exercise.**
 
 ### Use lapply with your own function
@@ -82,6 +103,7 @@ select_second <- function(x) {
 # Apply select_second() over split_low: years
 years <- lapply(split_low, select_second)
 ```
+
 **Nice one! Head over to the next exercise to learn about anonymous functions.**
 
 ### lapply and anonymous functions
@@ -116,6 +138,7 @@ names <- lapply(split_low, function(x) { x[1] })
 # Transform: use anonymous function inside lapply
 years <- lapply(split_low, function(x) { x[2] })
 ```
+
 **Great! Now, there's another way to solve the issue of using the** `select_*()` **functions only once: you can make a more generic function that can be used in more places. Find out more about this in the next exercise.**
 
 ### Use lapply with additional arguments
@@ -148,6 +171,7 @@ select_el <- function(x, index) {
 names <- lapply(split_low, select_el, index = 1)
 years <- lapply(split_low, select_el, index = 2)
 ```
+
 **Awesome! Your lapply skills are growing by the minute!**
 
 ### Apply functions that return NULL
@@ -181,7 +205,11 @@ What will the following code chunk return (`split_low` is already available in t
 
 **Wonderful! Feel free to experiment some more with your code in the console. Did you notice that** `lapply()` **always returns a list, no matter the input? This can be kind of annoying. In the next video tutorial you'll learn about** `sapply()` **to solve this.**
 
-> --- Video: "Lecture 02 - sapply" ---
+<div align="middle">
+
+<video width="80%" controls src="./Videos/Chapter 04 - Lecture 02 - sapply.mp4" type="video/mp4"/>
+
+</div>
 
 ### How to use sapply
 
@@ -274,6 +302,7 @@ sapply(temp, max)
 ```
 ## [1]  9 13  8  7  9  9  9
 ```
+
 **Nice! Can you tell the difference between the output of** `lapply()` **and** `sapply()`**? The former returns a list, while the latter returns a vector that is a simplified version of this list. Notice that this time, unlike in the cities example of the instructional video, the vector is not named.**
 
 ### sapply with your own function
@@ -294,7 +323,7 @@ Here, `FUN` can be one of R's built-in functions, but it can also be a function 
 
 # Finish function definition of extremes_avg
 extremes_avg <- function(x) {
-  ( min(x) + max(x) ) / 2
+  (min(x) + max(x)) / 2
 }
 
 # Apply extremes_avg() over temp using lapply()
@@ -332,6 +361,7 @@ sapply(temp, extremes_avg)
 ```
 ## [1] 4.0 9.0 2.5 2.5 5.5 3.0 5.0
 ```
+
 **Great job! Of course, you could have solved this exercise using an anonymous function, but this would require you to use the code inside the definition of** `extremes_avg()` **twice. Duplicating code should be avoided as much as possible!**
 
 ### sapply with function returning vector
@@ -395,6 +425,7 @@ sapply(temp, extremes)
 ## min   -1    5   -3   -2    2   -3    1
 ## max    9   13    8    7    9    9    9
 ```
+
 **Wonderful! Have a final look at the console and see how** `sapply()` **did a great job at simplifying the rather uninformative 'list of vectors' that** `lapply()` **returns. It actually returned a nicely formatted matrix!**
 
 ### sapply can't simplify, now what?
@@ -429,6 +460,7 @@ identical(freezing_l, freezing_s)
 ```
 ## [1] TRUE
 ```
+
 **Nice one! Given that the length of the output of** `below_zero()` **changes for different input vectors,** `sapply()` **is not able to nicely convert the output of** `lapply()` **to a nicely formatted matrix. Instead, the output values of** `sapply()` **and** `lapply()` **are exactly the same, as shown by the** `TRUE` **output of** `identical()`**.**
 
 ### sapply with functions that return NULL
@@ -523,6 +555,7 @@ sapply(temp, print_info)
 ## [[7]]
 ## NULL
 ```
+
 **Great! Notice here that, quite surprisingly,** `sapply()` **does not simplify the list of** `NULL`**'s. That's because the 'vector-version' of a list of** `NULL`**'s would simply be a** `NULL`**, which is no longer a vector with the same length as the input. Proceed to the next exercise.**
 
 ### Reverse engineering sapply
@@ -548,7 +581,11 @@ Select the option that lists **all** correct statements.
 
 **Great! This concludes the exercise set on** `sapply()`**. Head over to another video to learn all about** `vapply()`**!**
 
-> --- Video: "Lecture 03 - vapply" ---
+<div align="middle">
+
+<video width="80%" controls src="./Videos/Chapter 04 - Lecture 03 - vapply.mp4" type="video/mp4"/>
+
+</div>
 
 ### Use vapply
 
@@ -581,6 +618,7 @@ vapply(temp, basics, numeric(3))
 ## mean  4.8    9  2.2  2.4  5.4  4.6  4.6
 ## max   9.0   13  8.0  7.0  9.0  9.0  9.0
 ```
+
 **Perfect! Notice how, just as with** `sapply()`**,** `vapply()` **neatly transfers the names that you specify in the** `basics()` **function to the row names of the matrix that it returns.**
 
 ### Use vapply (2)
@@ -612,6 +650,7 @@ vapply(temp, basics, numeric(4))
 ## median  6.0    9  3.0  2.0  5.0  5.0  4.0
 ## max     9.0   13  8.0  7.0  9.0  9.0  9.0
 ```
+
 **Great job! Head over to the next exercise.**
 
 ### From sapply to vapply
@@ -640,5 +679,6 @@ vapply(temp, function(x, y) { mean(x) > y }, y = 5, logical(1))
 ```
 ## [1] FALSE  TRUE FALSE FALSE  TRUE FALSE FALSE
 ```
+
 **Great! You've got no more excuses to use** `sapply()` **in the future!**  
 **You have finished the chapter "The apply family"!**

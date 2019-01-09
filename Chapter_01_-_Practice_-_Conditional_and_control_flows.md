@@ -81,6 +81,7 @@ TRUE == 1
 ```
 ## [1] TRUE
 ```
+
 **Awesome! Since** `TRUE` **coerces to** `1` **under the hood,** `TRUE == 1` **evaluates to** `TRUE`**. Make sure not to mix up** `==` **(comparison) and** `=` **(assignment),** `==` **is what need to check the equality of R objects.**
 
 ### Greater and less than
@@ -126,11 +127,12 @@ TRUE > FALSE
 ```
 ## [1] TRUE
 ```
+
 **Great job! Make sure to have a look at the console output to see if R returns the results you expected.**
 
 ### Compare vectors
 
-You are already aware that R is very good with vectors. Without having to change anything about the syntax, R's relational operators also work on vectors.
+ You are already aware that R is very good with vectors. Without having to change anything about the syntax, R's relational operators also work on vectors.
 
 Let's go back to the example that was started in the video. You want to figure out whether your activity on social media platforms have paid off and decide to look at your results for LinkedIn and Facebook. The sample code in the editor initializes the vectors `linkedin` and `facebook`. Each of the vectors contains the number of profile views your LinkedIn and Facebook profiles had over the last seven days.
 
@@ -171,6 +173,7 @@ linkedin > facebook
 ```
 ## [1] FALSE  TRUE  TRUE FALSE FALSE  TRUE FALSE
 ```
+
 **Wonderful! Have a look at the console output. Your LinkedIn profile was pretty popular on the sixth day, but less so on the fourth and fifth day.**
 
 ### Compare matrices
@@ -211,6 +214,7 @@ views <= 14
 ## [1,] FALSE TRUE TRUE  TRUE TRUE FALSE TRUE
 ## [2,] FALSE TRUE TRUE FALSE TRUE  TRUE TRUE
 ```
+
 **Nice job! This exercise concludes the part on comparators. Now that you know how to query the relation between R objects, the next step will be to use the results to alter the behavior of your programs. Find out all about that in the next video!**
 
 <div align="middle">
@@ -259,6 +263,7 @@ last > 15 & last <= 20
 ```
 ## [1] FALSE
 ```
+
 **Great! Have one last look at the console before proceeding; do the results of the different expressions make sense?**
 
 ### & and | (2)
@@ -302,6 +307,7 @@ views > 11 & views <= 14
 ## [1,] FALSE FALSE  TRUE FALSE FALSE FALSE TRUE
 ## [2,] FALSE FALSE FALSE FALSE FALSE  TRUE TRUE
 ```
+
 **Bravo! You'll have noticed how easy it is to use logical operators to vectors and matrices. What do these results tell us? The third day of the recordings was the only day where your LinkedIn profile was visited more than 10 times, while your Facebook profile wasn't. Can you draw similar conclusions for the other results?**
 
 ### Reverse the result: !
@@ -429,6 +435,7 @@ sum(li_df[, 2] > 25 | li_df[, 2] < 5)
 ```
 ## [1] 16
 ```
+
 **Great! Head over to the next video and learn how relational and logical operators can be used to alter the flow of your R scripts.**
 
 <div align="middle">
@@ -472,6 +479,7 @@ if (num_views > 15) {
   print("You're popular!")
 }
 ```
+
 **Great! Try to see what happens if you change the** `medium` **and** `num_views` **variables and run your code again. Let's further customize these if statements in the next exercise.**
 
 ### Add an else
@@ -523,6 +531,7 @@ if (num_views > 15) {
 ```
 ## [1] "Try to be more visible!"
 ```
+
 **Great job! You also had Facebook information available, remember? Time to add some more statements to our control structures using** `else if`**!**
 
 ### Customize further: else if
@@ -582,6 +591,7 @@ if (num_views > 15) {
 ```
 ## [1] "Your number of views is average"
 ```
+
 **Awesome! Have another look at the second control structure. Because R abandons the control flow as soon as it finds a condition that is met, you can simplify the condition for the** `else if` **part in the second construct to** `num_views > 10`**.**
 
 ### Else if 2.0
@@ -654,5 +664,6 @@ sms
 ```
 ## [1] 24
 ```
+
 **Bellissimo! Feel free to play around some more with your solution by changing the values of** `li` **and** `fb`**.**  
 **You have finished the chapter "Conditionals and control flow"!**

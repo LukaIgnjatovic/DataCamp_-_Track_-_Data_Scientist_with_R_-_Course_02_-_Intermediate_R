@@ -60,6 +60,7 @@ while (speed > 30) {
 # Print out the speed variable
 speed
 ```
+
 **Great job! Proceed to the next exercise.**
 
 ### Throw in more conditionals
@@ -89,6 +90,7 @@ while (speed > 30) {
   }
 }
 ```
+
 **Wonderful! To further improve our driver assistant model, head over to the next exercise!**
 
 ### Stop the while loop: break
@@ -120,6 +122,7 @@ while (speed > 30) {
   }
 }
 ```
+
 **Wonderful! Now that you've correctly solved this exercise, feel free to play around with different values of** `speed` **to see how the** `while` **loop handles the different cases.**
 
 ### Build a while loop from scratch
@@ -144,6 +147,7 @@ while (i <= 10) {
   i <- i + 1
 }
 ```
+
 **Great work! Head over to the next video!**
 
 <div align="middle">
@@ -186,6 +190,7 @@ for (i in 1:length(linkedin)) {
   print(linkedin[i])
 }
 ```
+
 **Piece of cake! Go to the next exercise.**
 
 ### Loop over a list
@@ -229,6 +234,7 @@ for (i in 1:length(nyc)) {
   print(nyc[[i]])
 }
 ```
+
 **Good job! Filip mentioned that** `for` **loops can also be used for matrices. Let's put that to a test in the next exercise.**
 
 ### Loop over a matrix
@@ -262,6 +268,7 @@ for (i in 1:nrow(ttt)) {
   }
 }
 ```
+
 **Awesome! You're sufficiently comfortable with basic** `for` **looping, so it's time to step it up a notch!**
 
 ### Mix it up with control flow
@@ -287,6 +294,7 @@ for (li in linkedin) {
   print(li)
 }
 ```
+
 **Outstanding! In the next exercise, you'll customize this** `for` **loop even further with** `break` **and** `next` **statements.**
 
 ### Next, you break it
@@ -327,6 +335,7 @@ for (li in linkedin) {
   print(li)
 }
 ```
+
 **Great.** `for`**,** `break`**,** `next`**? We name it, you can do it!**
 
 ### Build a for loop from scratch
@@ -364,5 +373,6 @@ for (char in chars) {
 # Print out rcount
 rcount
 ```
+
 **For-midable! This exercise concludes the chapter on** `while` **and** `for` **loops.**  
 **You have finished the chapter "Loops"!**

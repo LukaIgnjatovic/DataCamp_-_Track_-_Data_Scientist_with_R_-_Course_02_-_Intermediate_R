@@ -49,6 +49,7 @@ errors <- c(1.9, -2.6, 4.0, -9.5, -3.4, 7.3)
 # Sum of absolute rounded values of errors
 sum(round(abs(errors)))
 ```
+
 **Great! Head over to the next exercise.**
 
 ### Find the error
@@ -67,6 +68,7 @@ vec2 <- rev(vec1)
 # Fix the error
 mean(abs(c(vec1, vec2)))
 ```
+
 **Nice work! If you check out the documentation of** `mean()`**, you'll see that only the first argument,** `x`**, should be a vector. If you also specify a second argument, R will match the arguments by position and expect a specification of the** `trim` **argument. Therefore, merging the two vectors is a must!**
 
 ### Data Utilities
@@ -104,6 +106,7 @@ social_vec <- append(li_vec, fb_vec)
 # Sort social_vec
 sort(social_vec, decreasing = TRUE)
 ```
+
 **Wonderful! These instructions required you to solve this challenge in a step-by-step approach. If you're comfortable with the functions, you can combine some of these steps into powerful one-liners.**
 
 ### Find the error (2)
@@ -136,6 +139,7 @@ seq2 <- seq(1200, 900, by = -7)
 # Calculate total sum of the sequences
 sum(c(seq1, seq2))
 ```
+
 **Nice! Head over to the next video and learn more about regular expressions!**
 
 <div align="middle">
@@ -177,6 +181,7 @@ hits <- grep("edu", emails)
 # Subset emails using hits
 emails[hits]
 ```
+
 **Bellissimo! You can probably guess what we're trying to achieve here: select all the emails that end with ".edu". However, the strings** `education@world.gov` **and** `invalid.edu` **were also matched. Let's see in the next exercise what you can do to improve our pattern and remove these false positives.**
 
 ### grepl & grep (2)
@@ -209,6 +214,7 @@ hits <- grep("@.*\\.edu$", emails)
 # Subset emails using hits
 emails[hits]
 ```
+
 **Great! A careful construction of our regular expression leads to more meaningful matches. However, even our robust email selector will often match some incorrect email addresses (for instance kiara@@fakemail.edu). Let's not worry about this too much and continue with** `sub()` **and** `gsub()` **to actually edit the email addresses!**
 
 ### sub & gsub
@@ -231,6 +237,7 @@ emails <- c("john.doe@ivyleague.edu",
 # Use sub() to convert the email domains to datacamp.edu
 sub("@.*\\.edu$", "@datacamp.edu", emails)
 ```
+
 **Awesome! Notice how only the valid .edu addresses are changed while the other emails remain unchanged. To get a taste of other things you can accomplish with regex, head over to the next exercise.**
 
 ### sub & gsub (2)
@@ -294,6 +301,7 @@ now <- Sys.time()
 # See what now looks like under the hood
 unclass(now)
 ```
+
 **Great! Using R to get the current date and time is nice, but you should also know how to create dates and times from character strings. Find out how in the next exercises!**
 
 ### Create and format dates
@@ -342,6 +350,7 @@ format(date1, "%A")
 format(date2, "%d")
 format(date3, "%b %Y")
 ```
+
 **You're a date magician! You can use** `POSIXct` **objects, i.e. Time objects in R, in a similar fashion. Give it a try in the next exercise.**
 
 ### Create and format times
@@ -378,6 +387,7 @@ time2 <- as.POSIXct(str2)
 format(time1, "%M")
 format(time2, "%I:%M %p")
 ```
+
 **Great!**
 
 ### Calculations with Dates
@@ -419,6 +429,7 @@ day_diff
 # Average period between two consecutive pizza days
 print(mean(day_diff))
 ```
+
 **Great! Head over to the next exercise.**
 
 ### Calculations with Times
@@ -469,6 +480,7 @@ sum(time_online)
 # Calculate the average time online
 mean(time_online)
 ```
+
 **Great! Time to tackle the final exercise of this course!**
 
 ### Time is of the essence
@@ -498,5 +510,6 @@ meteo_dates <- as.Date(meteo, format = "%B %d, %y")
 # Calculate the maximum absolute difference between astro_dates and meteo_dates
 max(abs(astro_dates - meteo_dates))
 ```
+
 **Impressive! Great job on finishing this course!**  
 **You have finished the chapter "Utilities"!**

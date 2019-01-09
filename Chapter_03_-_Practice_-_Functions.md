@@ -55,6 +55,7 @@ In the next exercises, you'll be learning how to use the `mean()` function with 
 # Inspect the arguments of the mean() function
 args(mean)
 ```
+
 **Great! That wasn't too hard, was it? Take a look at the documentation and head over to the next exercise.**
 
 ### Use a function
@@ -97,6 +98,7 @@ avg_fb
 ```
 ## [1] 11.42857
 ```
+
 **Nice! I'm sure you've already called more advanced R functions in your history as a programmer. Now you also know what actually happens under the hood.**
 
 ### Use a function (2)
@@ -148,6 +150,7 @@ avg_sum_trimmed
 ```
 ## [1] 22.6
 ```
+
 **Nice! When the** `trim` **argument is not zero, it chops off a fraction (equal to** `trim`**) of the vector you pass as argument** `x`**.**
 
 ### Use a function (3)
@@ -185,6 +188,7 @@ mean(linkedin, na.rm = TRUE)
 ```
 ## [1] 12.33333
 ```
+
 **Awesome! Up to the next exercise!**
 
 ### Functions inside functions
@@ -211,6 +215,7 @@ mean(abs(linkedin - facebook), na.rm = TRUE)
 ```
 ## [1] 4.8
 ```
+
 **Excellent! Proceed to the next exercise.**
 
 ### Required, or optional?
@@ -286,6 +291,7 @@ sum_abs(-2, 3)
 ```
 ## [1] 5
 ```
+
 **Great! Step it up a notch in the next exercise!**
 
 ### Write your own function (2)
@@ -323,6 +329,7 @@ hello()
 ```
 ## [1] TRUE
 ```
+
 **Truly impressive! Head over to the next exercise.**
 
 ### Write your own function (3)
@@ -355,6 +362,7 @@ pow_two <- function(x, print_info = TRUE) {
   return(y)
 }
 ```
+
 **Wonderful! Have you tried calling this** `pow_two()` **function? Try** `pow_two(5)`**,** `pow_two(5, TRUE)` **and** `pow_two(5, FALSE)`**. Which ones give different results?**
 
 ### Function scoping
@@ -477,6 +485,7 @@ interpret(facebook[2])
 ```
 ## [1] 0
 ```
+
 **Funkadelic! The annoying thing here is that** `interpret()` **only takes one argument. Proceed to the next exercise to implement something more useful.**
 
 ### R you functional? (2)
@@ -560,6 +569,7 @@ interpret_all(facebook)
 ```
 ## [1] 33
 ```
+
 **Perfect! Have a look at the results; it appears that the sum of views on popular days are the same for Facebook and LinkedIn, what a coincidence! Your different social profiles must be fairly balanced. Head over to the next video!**
 
 <div align="middle">
@@ -612,6 +622,7 @@ search()
 ##  [7] "package:datasets"  "package:methods"   "Autoloads"        
 ## [10] "package:base"
 ```
+
 **Awesome! Notice how** `search()` *and* `library()` *are closely interconnected functions. Head over to the next exercise.*
 
 ### Different ways to load a package
