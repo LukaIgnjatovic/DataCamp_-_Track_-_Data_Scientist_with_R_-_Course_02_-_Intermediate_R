@@ -34,4 +34,4 @@ The intermediate R course is the logical next stop on your journey in the R prog
 
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
